@@ -1,116 +1,20 @@
-CEF2go
+Wakeup
 ======
+This tool is designed to be used by families with small children, or by adults
+who need a little more structure in their wakeup routine.  The application
+runs in a cross-platform CEF window and displays the current time as well as
+the weather for the day.  It is intended to be run 24/7 as a full-screen alarm
+clock.  At the time indicated in the configuration file, a wakeup routine will
+begin.  This routine is a sequence of songs, each one pertaining to some
+pre-defined aspect of the morning routine.  An icon will flash on-screen
+indicating what the associated action is (get up, brush teeth, eat breakfast).
 
-Table of contents:
- * [Introduction](#introduction)
- * [Compatibility](#compatibility)
- * [Binary examples](#binary-examples)
- * [Help](#help)
- * [Support Development](#support-development)
- * [Forks worth a look](#forks-worth-a-look)
- * [Communication between Go and Javascript]
-    (#communication-between-go-and-javascript)
- * [Getting started on Windows](#getting-started-on-windows)
- * [Getting started on Linux](#getting-started-on-linux)
- * [Getting started on Mac OS X](#getting-started-on-mac-os-x)
- * [Built a cool app?](#built-a-cool-app)
- * [Familiar with Python or PHP?](#familiar-with-python-or-php)
-
-
-Introduction
-------------
-
-CEF2go is an open source project founded by [Czarek Tomczak]
-(http://www.linkedin.com/in/czarektomczak) in 2014
-to provide Go bindings for the [Chromium Embedded Framework]
-(https://code.google.com/p/chromiumembedded/) (CEF).
-CEF2go can act as a GUI toolkit, allowing you to create an HTML 5
-based GUI in your application. Or you can provide browser
-capabilities to your application.
-
-Currently the CEF2go example creates just a simple window with
-the Chromium browser embedded. You can set a few options for
-your application like the cache directory. More advanced bindings
-are in plans, and that includes javascript bindings and callbacks, so
-that you can have bidirectional communication between Go and
-Javascript in a native way. Though, it is already possible to
-communicate with Go from Javascript, see the "Communication 
-between Go and Javascript" section further down this page.
-
-CEF2go is licensed under the BSD 3-clause license, see the LICENSE
-file.
-
-
-Compatibility
--------------
-Supported platforms: Windows, Linux, Mac OSX.
-
-CEF2go was tested and works fine with Go 1.2 / Go 1.3.3.
-
-
-Binary examples
----------------
-The binary examples provided here use CEF 3 branch 1750 (Chrome 33
-beta channel as of build time).
-
-Windows example: [releases/tag/v0.10]
-(https://github.com/CzarekTomczak/cef2go/releases/tag/v0.10)  
-
-Linux example: [releases/tag/v0.11]
-(https://github.com/CzarekTomczak/cef2go/releases/tag/v0.11)  
-
-Mac OSX example: [releases/tag/v0.12]
-(https://github.com/CzarekTomczak/cef2go/releases/tag/v0.12)
-
-
-Help
-----
-Having problems or questions? Go to the [CEF2go Forum]
-(http://groups.google.com/group/cef2go). Please do not use Issue 
-Tracker for asking questions.
-
-See the auto generated docs for the following packages:
- * [cef](https://godoc.org/github.com/CzarekTomczak/cef2go/src/cef)
- * [cocoa](https://godoc.org/github.com/CzarekTomczak/cef2go/src/cocoa)
- * [gtk](https://godoc.org/github.com/CzarekTomczak/cef2go/src/gtk)
- * [wingui](https://godoc.org/github.com/CzarekTomczak/cef2go/src/wingui)
-
-
-Support development
--------------------
-
-Both code contributions and Paypal donations are welcome.
-[![Donate through Paypal]
-(https://raw.githubusercontent.com/CzarekTomczak/cef2go/master/donate.gif)]
-(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9CAMRSA48UVT8)
-
-
-Forks worth a look
-------------------
- * [fromkeith/cef2go](https://github.com/fromkeith/cef2go)
-    * Adds support for client handlers (eg. Display, LifeSpan, Request,
-    Resource, Scheme, Download).
-    * Exposes new objects (eg. Browser, Frame, Request, Response). 
-    * Tested only on Windows.
- * [paperlesspost/cef2go](https://github.com/paperlesspost/cef2go)
-    * Adds suport for a few client handlers including Render handler
-    (off-screen rendering to a raw pixel buffer). 
-    * Implements V8 callbacks for native communication from Javascript
-    to Go.
-    * Tested only on Linux.
-
-
-Communication between Go and Javascript
----------------------------------------
-For now to make communication between Go and javascript possible
-you have to run an internal http server and communicate using 
-XMLHttpRequests in javascript. See the [http_server_windows.go]
-(https://github.com/CzarekTomczak/cef2go/blob/master/src/http_server_windows.go)
-example that embeds both a http server and a Chromium browser
-in a standalone application. To run it type "build.bat http_server". 
-The http server is listening at 127.0.0.1:54007, thus it is not 
-accessible from the outside, it can be accessed only from the 
-machine it is running on.
+Platforms
+---------
+The primary target for Wakeup is a RaspberryPi running Raspbian ARMv6 with a 
+small (3.2inch) screen.  However, to whatever extent it is possible, 
+compatibility will be maintained with the then-current Linux x86 and x86_64, 
+Windows x86_64, and OS X x86_64 running the most recent stable version of Go.
 
 
 Getting started on Windows
@@ -179,18 +83,9 @@ Getting started on Mac OS X
 
 6. Run "make" command.
 
+Copying
+-------
+Wakeup is licensed under the 2-CLAUSE BSD LICENSE.  See LICENSE for details.
 
-Built a cool app?
------------------
-Built a cool app using CEF2go and would like to share info with
-the community? Talk about it on the [CEF2go Forum]
-(http://groups.google.com/group/cef2go).
-
-
-Familiar with Python or PHP?
-----------------------------
-The author of CEF2go is also working on CEF bindings
-for other languages. For Python see the [CEF Python]
-(https://code.google.com/p/cefpython/) project. For PHP see the 
-[PHP Desktop](https://code.google.com/p/phpdesktop/) project.
-
+CEF2go is licensed under the 3-CLAUSE BSD LICENSE.  See cef2go.LICENSE for 
+details.
