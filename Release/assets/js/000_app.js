@@ -1,3 +1,7 @@
+// Copyright (c) 2015 Cameron King. All rights reserved.
+// License: BSD 2-clause.
+// Website: https://github.com/ckxng/wakeup
+
 var wakeupWebApp = angular.module('wakeupWebApp', [
 	'ngRoute',
 	'wakeupWebAppControllers',
