@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="wakeupWebApp" ng-controller="MainCtrl">
+
+<head>
+  <title>Wakeup</title>
+
+  <!-- Viewport mobile tag for sensible mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <link rel="stylesheet" href="/styles/bootstrap-3.3.1.min.css">
+  <link rel="stylesheet" href="/styles/bootstrap-theme-3.3.1.min.css">
+
+  <!--STYLES-->
+  <link rel="stylesheet" href="/styles/style.css">
+  <!--STYLES END-->
+
+</head>
+
+<body>
+
+  <div class="container">
+    
+      <div ng-view>
+        <noscript>
+
+          <h1>JavaScript is Required</h1>
+
+          <p>Please accept my sincerest apologies, but JavaScript is 
+		  required for the proper functioning of this website.</p>
+
+        </noscript>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/js/date.format-1.2.3.js"></script>
+  <script src="/js/jquery-1.11.1.min.js"></script>
+  <script src="/js/bootstrap-3.3.1.min.js"></script>
+
+  <!--[if lt IE 9]>
+      <script src="/js/html5shiv-3.7.2.min.js"></script>
+      <script src="/js/respond-1.4.2.min.js"></script>
+    <![endif]-->
+
+  <script src="/js/angular-1.2.26.min.js"></script>
+  <script src="/js/angular-route-1.2.26.min.js"></script>
+
+  <!--SCRIPTS-->
+  <script src="/js/000_app.js"></script>
+  <script src="/js/400_pageFactory.js"></script>
+  <script src="/js/500_controllers.js"></script>
+  <!--SCRIPTS END-->
+</body>
+
+</html>

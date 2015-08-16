@@ -28,7 +28,7 @@ func Go(cfg *config.Config, c chan int) {
     router := mux.NewRouter().StrictSlash(false)
 	
 	logger.Println("router: adding controllers")
-    router.HandleFunc("/", handler)
+    router.HandleFunc("/hello", handler)
     router.HandleFunc("/json", JSONDecorator(jsonHandler))
     // add additional controller routes
 	
