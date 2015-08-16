@@ -90,14 +90,18 @@ Wakeup is licensed under the 2-CLAUSE BSD LICENSE.  See LICENSE for details.
 CEF2go is licensed under the 3-CLAUSE BSD LICENSE.  See cef2go.LICENSE for 
 details.
 
-AngularJS is licensed under the MIT license.
+AngularJS is licensed under the MIT license.  See angularjs.LICENSE for details.
 
-Bootstrap is licensed under the MIT license.
+Bootstrap is licensed under the MIT license.  See bootstrap.LICENSE for details.
 
-Date.Format is licensed under the MIT license.
+Date.Format is licensed under the MIT license.  See 
+http://blog.stevenlevithan.com/code for details.
 
-Html5shiv is licensed under the MIT and GPL2 license.
+Html5shiv is licensed under the MIT and GPL2 license.  See html5shiv.LICENSE.md
+for details.
 
-jQuery is licensed under the MIT license.
+jQuery is licensed under the MIT license.  See http://jquery.org/license/ for 
+details.
 
-Respond.js is licensed under the MIT license.
+Respond.js is licensed under the MIT license.  See respondjs.LICENSE for 
+details.
