@@ -17,6 +17,10 @@ type Config struct {
 	Protocol		string
 	CachePath		string
 	Title			string
+	WindowX			int32
+	WindowY			int32
+	WindowWidth		int32
+	WindowHeight	int32
 }
 
 func NewConfig() (*Config) {
@@ -29,6 +33,10 @@ func NewConfig() (*Config) {
 		Protocol:		"http",
 		CachePath:		"webcache",
 		Title:			"Application",
+		WindowX:		0,
+		WindowY:		0,
+		WindowWidth:	320,
+		WindowHeight:	240,
 	}
 }
 
