@@ -105,3 +105,6 @@ details.
 
 Respond.js is licensed under the MIT license.  See respondjs.LICENSE for 
 details.
+
+Cron for Javascript is licensed under the GPL3 license.  See 
+http://www.gnu.org/licenses/ for details.

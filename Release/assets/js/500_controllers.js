@@ -10,19 +10,19 @@ wakeupWebAppControllers.filter('stringify', function(){
     };
 });
 
-var wakeupWebAppControllers_helper_updateTime = function(Page) {
-	Page.setTime(new Date())
-};
-
 wakeupWebAppControllers.controller('MainCtrl', [
-    '$scope', '$interval', 'Page',
-    function ($scope, $interval, Page) {
+    '$scope', '$location', '$interval', 'Page',
+    function ($scope, $location, $interval, Page) {
         $scope.Page = Page;
 		Page.setTitle("Wakeup App")
 		
 		$interval(function() {
 			Page.setTime(new Date());
 		}, 1000);
+		
+		Cron_Schedule($location);
+		
+		Cron.start();
     }
 ]);
 
