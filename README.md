@@ -9,6 +9,24 @@ begin.  This routine is a sequence of songs, each one pertaining to some
 pre-defined aspect of the morning routine.  An icon will flash on-screen
 indicating what the associated action is (get up, brush teeth, eat breakfast).
 
+Configuration
+-------------
+There are six default actions programmed into this application.
+- wakeup-rise
+- wakeup-dress
+- wakeup-breakfast
+- wakeup-teeth
+- wakeup-backpack
+- wakeup-leave
+
+The schedule can be adjusted by creating a file called 
+./Release/assets/config/cron_schedule.js.  There is an example file called
+cron_schedule.js.example in that same folder.
+
+Audio files must be added to the ./Release/assets/audio/ folder using the
+filename "ACTION.ogg" (for example: wakeup-rise.ogg).  There is a sample file
+called sample.ogg in that same folder.
+
 Platforms
 ---------
 The primary target for Wakeup is a RaspberryPi running Raspbian ARMv6 with a 
@@ -108,3 +126,6 @@ details.
 
 Cron for Javascript is licensed under the GPL3 license.  See 
 http://www.gnu.org/licenses/ for details.
+
+Sample audio files from Joseph SARDIN are royalty-free.  See 
+http://www.bigsoundbank.com/sound-0172-reveil-semi-mecanique.html for details.
