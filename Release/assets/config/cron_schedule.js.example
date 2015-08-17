@@ -26,5 +26,9 @@ function Cron_Schedule($location) {
 		Cron_Jobs.push(Cron.Job("40 7 * * "+$day, function() {
 			$location.path("/wakeup/leave");
 		}));
+		
+		Cron_Jobs.push(Cron.Job("55 7 * * "+$day, function() {
+			$location.path("/clock");
+		}));
 	}
 }

@@ -25,7 +25,7 @@ cron_schedule.js.example in that same folder.
 
 Audio files must be added to the ./Release/assets/audio/ folder using the
 filename "ACTION.ogg" (for example: wakeup-rise.ogg).  There is a sample file
-called sample.ogg in that same folder.
+called sample.ogg in that same folder.  The audio file will loop.
 
 Platforms
 ---------
