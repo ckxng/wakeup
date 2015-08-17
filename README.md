@@ -9,6 +9,11 @@ begin.  This routine is a sequence of songs, each one pertaining to some
 pre-defined aspect of the morning routine.  An icon will flash on-screen
 indicating what the associated action is (get up, brush teeth, eat breakfast).
 
+Status
+------
+This project is barely functional and is missing some key code for OSX and 
+Linux support.
+
 Configuration
 -------------
 There are six default actions programmed into this application.
