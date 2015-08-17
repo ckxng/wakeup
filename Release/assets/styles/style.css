@@ -2,3 +2,13 @@
  * License: BSD 2-clause.
  * Website: https://github.com/ckxng/wakeup */
 
+div.background-image {
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	position:fixed;
+	z-index:-1;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

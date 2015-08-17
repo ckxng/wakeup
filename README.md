@@ -27,6 +27,10 @@ Audio files must be added to the ./Release/assets/audio/ folder using the
 filename "ACTION.ogg" (for example: wakeup-rise.ogg).  There is a sample file
 called sample.ogg in that same folder.  The audio file will loop.
 
+Image files must be added to the ./Release/assets/images/ folder using the
+filename "ACTION.png" (for example: wakeup-rise.png).  There is are sample
+images for each of the built-in actions in that same folder.
+
 Platforms
 ---------
 The primary target for Wakeup is a RaspberryPi running Raspbian ARMv6 with a 
@@ -129,3 +133,6 @@ http://www.gnu.org/licenses/ for details.
 
 Sample audio files from Joseph SARDIN are royalty-free.  See 
 http://www.bigsoundbank.com/sound-0172-reveil-semi-mecanique.html for details.
+
+Sample images files are in the Public Domain.  See
+https://openclipart.org/share for details.
