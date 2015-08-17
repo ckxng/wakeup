@@ -117,7 +117,7 @@ Wakeup is licensed under the 2-CLAUSE BSD LICENSE.  See LICENSE for details.
 CEF2go is licensed under the 3-CLAUSE BSD LICENSE.  See cef2go.LICENSE for 
 details.
 
-Chromium Embedded Framework licensed under the 3-CLAUSE BSD LICENSE.
+Chromium Embedded Framework is licensed under the 3-CLAUSE BSD LICENSE.
 See https://code.google.com/p/chromiumembedded/ for details.
 
 AngularJS is licensed under the MIT license.  See angularjs.LICENSE for details.
