@@ -15,7 +15,7 @@ function Cron_Schedule($location) {
 		
 		Cron.Job("30 7 * * "+$day, function() {
 			$location.path("/wakeup/teeth");
-		}))
+		});
 		
 		Cron.Job("35 7 * * "+$day, function() {
 			$location.path("/wakeup/backpack");
