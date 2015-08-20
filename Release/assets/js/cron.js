@@ -48,7 +48,7 @@ var Cron = {
   clearInterval(Cron.id);
  },
  "Job" : function(cronstring, fun) {
-  var _Job = this;
+  var _Job = {};
   var items = cronstring.match(/^([0-9]+|\*{1})[ \n\t\b]+([0-9]+|\*{1})[ \n\t\b]+([0-9]+|\*{1})[ \n\t\b]+([0-9]+|\*{1})[ \n\t\b]+([0-9]+|\*{1})[ \n\t\b]*$/);
   _Job.minute = items[1];
   _Job.hour = items[2];
