@@ -1,34 +1,32 @@
-var Cron_Jobs = new Array();
-
 function Cron_Schedule($location) {
 	// wakeup at 7am on School days
 	for($day = 1; $day <= 5; $day++) {
-		Cron_Jobs.push(Cron.Job("0 7 * * "+$day, function() {
+		Cron.Job("0 7 * * "+$day, function() {
 			$location.path("/wakeup/rise");
-		}));
+		});
 		
-		Cron_Jobs.push(Cron.Job("5 7 * * "+$day, function() {
+		Cron.Job("5 7 * * "+$day, function() {
 			$location.path("/wakeup/dress");
-		}));
+		});
 		
-		Cron_Jobs.push(Cron.Job("10 7 * * "+$day, function() {
+		Cron.Job("10 7 * * "+$day, function() {
 			$location.path("/wakeup/breakfast");
-		}));
+		});
 		
-		Cron_Jobs.push(Cron.Job("30 7 * * "+$day, function() {
+		Cron.Job("30 7 * * "+$day, function() {
 			$location.path("/wakeup/teeth");
-		}));
+		}))
 		
-		Cron_Jobs.push(Cron.Job("35 7 * * "+$day, function() {
+		Cron.Job("35 7 * * "+$day, function() {
 			$location.path("/wakeup/backpack");
-		}));
+		});
 		
-		Cron_Jobs.push(Cron.Job("40 7 * * "+$day, function() {
+		Cron.Job("40 7 * * "+$day, function() {
 			$location.path("/wakeup/leave");
-		}));
+		});
 		
-		Cron_Jobs.push(Cron.Job("55 7 * * "+$day, function() {
+		Cron.Job("55 7 * * "+$day, function() {
 			$location.path("/clock");
-		}));
+		});
 	}
 }
