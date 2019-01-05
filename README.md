@@ -11,6 +11,8 @@ indicating what the associated action is (get up, brush teeth, eat breakfast).
 
 Status
 ------
+This software is ABANDONED and no further improvements will be made.
+
 This project is barely functional and is missing some key code for OSX and 
 Linux support.
 
